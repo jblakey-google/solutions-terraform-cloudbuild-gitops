@@ -11,3 +11,6 @@ gcloud storage buckets list
 BUCKET="gs://$(gcloud storage buckets list --format="value(name)" | grep tfstate | head -n 1 )"
 gcloud storage buckets update $BUCKET --versioning
 echo $BUCKET
+
+
+gcloud storage buckets update gs://798656365078-jblakey-iac-codelab-tfstate --versioning

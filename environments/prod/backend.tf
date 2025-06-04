@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "lucid-volt-361004-tfstate"
+    bucket = "798656365078-jblakey-iac-codelab-tfstate"
     prefix = "env/prod"
   }
 }
